@@ -1,51 +1,72 @@
 📊 Dashboard de Segurança Pública – RJ
+Projeto de Extensão da Faculdade | Python + Streamlit + IA
 
-Este projeto é um dashboard interativo desenvolvido em Python + Streamlit, utilizando dados do CISP para analisar criminalidade no estado do Rio de Janeiro.
-O objetivo é fornecer visualizações claras sobre homicídios, roubos, furtos e total de crimes por região e ano.
+Este projeto foi desenvolvido como parte de um projeto de extensão universitária, com o objetivo de analisar dados de segurança pública do estado do Rio de Janeiro utilizando ferramentas modernas de visualização e análise.
 
-🚀 Principais funcionalidades
+Para construir este dashboard, utilizei tecnologias que nunca tinha trabalhado antes, como Streamlit e Plotly, o que tornou o processo bastante desafiador. Porém, com dedicação, estudo e apoio de ferramentas de Inteligência Artificial, foi possível aprender rapidamente e entregar um resultado completo e funcional.
 
-✔️ Filtros por ano e região
-✔️ Indicadores (cards) com totais de cada crime
-✔️ Gráfico linha de homicídios por ano
-✔️ Gráfico barra comparando regiões
-✔️ Gráfico área de roubos ao longo dos anos
-✔️ Ranking das regiões mais perigosas
-✔️ Mapa interativo com intensidade de crimes (Mapbox)
-✔️ Tabela detalhada dos dados filtrados
+🚀 Funcionalidades do Dashboard
+
+📈 Gráfico de homicídios dolosos por ano
+
+📊 Comparação entre regiões
+
+🔍 Evolução dos roubos ao longo do tempo
+
+🏆 Ranking das regiões mais perigosas
+
+🗺️ Mapa interativo mostrando concentração de crimes
+
+🧮 Indicadores (cards) com totais filtrados
+
+📋 Tabela completa dos dados filtrados
+
+🧠 Uso de Inteligência Artificial
+
+Ao longo do desenvolvimento, utilizei IA para:
+
+Apoio na organização e estruturação do código
+
+Explicação de conceitos novos
+
+Sugestões de otimização
+
+Aceleração do processo de aprendizado em tecnologias inéditas
 
 🛠️ Tecnologias utilizadas
 
 Python
-Streamlit
-Pandas
-Plotly Express
-OpenPyXL (para leitura do Excel)
 
-📦 Estrutura do Projeto
-Dashboard_Cisp/
-│
-├── BaseDadosCisp.xlsx        # Base original do CISP
-├── dashboard.py              # Aplicação Streamlit (principal)
+Streamlit
+
+Pandas
+
+Plotly Express
+
+OpenPyXL
+
+📦 Como executar o projeto
+
+Instale as dependências:
+
+pip install -r requirements.txt
+
+
+Execute o aplicativo:
+
+streamlit run dashboard.py
+
+
+O dashboard abrirá automaticamente no navegador em:
+
+http://localhost:8501
+
+📁 Estrutura do Projeto
+├── BaseDadosCisp.xlsx        # Base utilizada na análise
+├── dashboard.py              # Aplicação principal
 ├── requirements.txt          # Dependências
 └── README.md                 # Documentação
 
-📍 Sobre a base de dados
+🎓 Sobre o Projeto
 
-. A base contém os campos:
-
-. ano
-
-. regiao (Capital, Baixada Fluminense, Niteroi, Interior)
-
-. hom_doloso
-
-. total_roubos
-
-. total_furtos
-
- O código calcula automaticamente:
-
-. crime_total
-
-. Coordenadas geográficas para visualização no mapa
+Este dashboard foi desenvolvido em equipe como parte de um projeto de extensão acadêmica, com foco em aprofundar conhecimentos em análise de dados, visualização e criação de aplicações interativas. O aprendizado envolveu sair totalmente da zona de conforto e explorar tecnologias novas na prática.
